@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Loop 1 - Step 2</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="./reset.css" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="wrapper">
+    <div class="menu--dots">
+      <span class="dot first"></span>
+      <span class="dot second"></span>
+      <span class="dot last"></span>
+    </div>
+
+    <h1>Payment method</h1><br>
+
+    <a href="#">
+      <div class="div--button" id="visa" onClick="clicker(this.id)">
+        <img src="img/visa.svg"><p class="paymentMethod">Visa</p>
+      </div>
+    </a>
+
+    <a href="#">
+      <div class="div--button" id="mastercard" onClick="clicker(this.id)">
+        <img src="img/mastercard.svg"><p class="paymentMethod">Mastercard</p>
+      </div>
+    </a>
+
+    <a href="#">
+      <div class="div--button" id="maestro" onClick="clicker(this.id)">
+        <img src="img/maestro.svg"><p class="paymentMethod">Maestro</p>
+      </div>
+    </a>
+
+    <a href="#" class="next--wrapper">
+      <div id="next">
+        <p>Next</p>
+      </div>
+    </a>
+
+    <script type="text/javascript">
+      function clicker(clicked_id) {
+        let list = document.querySelectorAll(".div--button")
+        let element = document.getElementById(clicked_id);
+
+        for (let i = 0; i < list.length; i++) {
+          list[i].classList.remove("active");
+          console.log(list[i]);
+        }
+
+        element.classList.add("active");
+      }
+    </script>
+
+</body>
+</html>

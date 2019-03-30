@@ -1,0 +1,18 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.btn-group, .form-control {
+  position: absolute;
+  top: 45%;
+}
+
+.btn, select {
+  font-weight: bold;
+}
+
+select {
+  text-shadow: 0px 0px 0px black;
+}
