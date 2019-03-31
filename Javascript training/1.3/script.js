@@ -1,5 +1,3 @@
-
-
 function check(id) {
     let randomNumber = getRandomNumber(id);
     let randomNumber_2 = getRandomNumber(id);
@@ -22,4 +20,3 @@ function getRandomNumber(id) {
     }
     return randomNumber;
 }
-
